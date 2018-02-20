@@ -312,6 +312,7 @@ ul {
 li {
  text-decoration: none;
  list-style: none;
+ margin-right: 1rem;
 }
 
 
@@ -353,6 +354,38 @@ li {
  bottom: 0;
 }
 
+.cat-tag-laravel
+{
+  position: relative;
+  z-index: 1000;
+  background-color: #FCC7C4;
+  padding: 0.3rem 0.8rem;
+  border-radius: 40px;
+  color: #F85142;
+  transition: 0.5s;
+}
+
+.cat-tag-react
+{
+  position: relative;
+  z-index: 1000;
+  background-color: #C7E9F4;
+  padding: 0.3rem 0.8rem;
+  border-radius: 40px;
+  color: #1AA5D1;
+  transition: 0.5s;
+}
+
+.cat-tag-vue
+{
+  position: relative;
+  z-index: 1000;
+  background-color: #D3F2E6;
+  padding: 0.3rem 0.8rem;
+  border-radius: 40px;
+  color: #47B784;
+  transition: 0.5s;
+}
 
 /* FOOTER CARD POSTS */
 
@@ -384,6 +417,46 @@ li {
  color: #000000;
 }
 
+
+/* PAGINATION */
+
+.container-pagination
+{
+  width: 36rem;
+  margin: 0 auto;
+}
+.pagination
+{
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+}
+.Link-animatedHover
+{
+  color:#251F6E !important;
+  font-size: 1.2em;
+}
+
+.Link-animatedHover:hover{
+  opacity: 1;
+}
+
+.Link-animatedHover:hover:after {
+    width: 100%;
+
+}
+
+.Link-animatedHover:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #251F6E;
+    transition: all .5s;
+}
 
 /* POST */
 
@@ -425,7 +498,7 @@ li {
 }
 
 .link-post {
- color: #3C80FB;
+ color: #251F6E;
  font-weight: bold;
  border-bottom: 3px solid #CADCFC;
  transition: 0.2s;
@@ -446,7 +519,7 @@ img {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 2px solid #3C80FB;
+  border-top: 2px solid #CADCFC;
 
  }
 
@@ -459,19 +532,20 @@ form
  border-radius: 2px;
  padding: 0.7rem;
  width: 250px;
+ margin-right: 0.3rem;
 }
 
 .btn-submit
 {
-  border: 1px solid #3C80FB;
+  border: 1px solid #251F6E;
   border-radius: 2px;
   padding: 0.7rem;
-  color: #3C80FB;
+  color: #251F6E;
   font-weight: bold;
   transition: 0.5s;
 }
 .btn-submit:hover{
-  background-color: #3C80FB;
+  background-color: #251F6E;
   color: #fff;
 }
 
@@ -502,7 +576,7 @@ form
   align-items: center;
   margin-right: -1rem;
   font-weight: bold;
-  color: #3C80FB;
+  color: #251F6E;
 }
 
 .next a svg
@@ -522,7 +596,7 @@ margin-left: 0.5rem;
   align-items: center;
   margin-left: -1rem;
   font-weight: bold;
-  color: #3C80FB;
+  color: #251F6E;
 }
 
 .previous a svg
