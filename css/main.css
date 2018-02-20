@@ -510,6 +510,12 @@ li {
  border-bottom: 3px solid #CADCFC;
 }
 
+
+.text-post{
+  font-family: 'Spectral', serif;
+font-size: 1.2em;
+}
+
 img {
  max-width: 100%;
 }
