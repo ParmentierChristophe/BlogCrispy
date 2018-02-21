@@ -211,6 +211,12 @@ html {
  background-color: #fbfafc;
  color: black;
 }
+
+.navbar, .navbar-post
+{
+ border-top: 3px solid #251F6E;
+}
+
 .logo{
   width: 50px;
   margin-right: 1rem;
@@ -219,6 +225,7 @@ html {
 a {
  text-decoration: none;
  color: black;
+ transition: 0.5s
 }
 
 a:hover {
@@ -475,13 +482,55 @@ img {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 2px solid #CADCFC;
+  border-bottom: 2px solid #CADCFC;
+  padding: 1rem;
 
  }
+
+ .tag-and-share
+ {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+ }
+
+ .share
+{
+  display: flex;
+  align-items: center;
+}
+
+.share-text
+{
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  color: #251F6E;
+  position: relative;
+  z-index: 1000;
+  background-color: #AAD9F7;
+  padding: 0.3rem 0.8rem;
+  border-radius: 40px;
+  color: #2AA3EF;
+  transition: 0.5s;
+}
+
+.share-text svg
+{
+
+
+  margin-left: 0.5rem;
+}
+
+.enjoy{
+ text-align: center;
+}
 
 form
 {
   padding-bottom: 1.5rem;
+text-align: center;
 }
 .input-post {
  border: 1px solid #CADCFC;
